@@ -131,7 +131,130 @@ Practitioners and Researchers</h1>
 </section>
 <!-- End paper abstract -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <table class="table is-striped is-hoverable">
+        <caption><strong>A comprehensive summary of representative LLM-based tasks, datasets, data modalities, key metrics, notable models, and limitations in the financial domain.</strong></caption>
+        <thead>
+          <tr style="background-color: #d3d3d3;">
+            <th>Agent & Subtask</th>
+            <th>Datasets & Benchmarks</th>
+            <th>Modalities (Data Types)</th>
+            <th>Key Metrics</th>
+            <th>Representative Models</th>
+            <th>Limitations</th>
+          </tr>
+        </thead>
+        <tbody>
 
+          <!-- Data Analysis Agent -->
+          <tr style="background-color: #f0f0f0;">
+            <td colspan="6"><strong>Data Analysis Agent (data processing and extraction)</strong></td>
+          </tr>
+
+          <tr>
+            <td><strong>Text Summarization (TS)</strong></td>
+            <td>ECT-Sum, LCFNS</td>
+            <td>Text (earnings-call transcripts, financial reports, news articles)</td>
+            <td>ROUGE, BERTScore, Num-Prec., SummaC</td>
+            <td>FinMA, FinTral, InvestLM, BloombergGPT, FinGPT, ICE-INTERN</td>
+            <td>Limited structured data integration, high computational cost, lack of real-time updates.</td>
+          </tr>
+
+          <tr style="background-color: #f9f9f9;">
+            <td><strong>Name-Entity Recognition (NER)</strong></td>
+            <td>FIN, FiNER-ORD</td>
+            <td>Text (SEC filings, financial news articles)</td>
+            <td>Precision, Recall, F1-score</td>
+            <td>FinMA, InvestLM, ICE-INTERN</td>
+            <td>Small-scale coverage, weak entity linking, limited numeric reasoning.</td>
+          </tr>
+
+          <tr>
+            <td><strong>Financial Relation Extraction (FRE)</strong></td>
+            <td>FinRED, FIRE, KPI-EDGAR</td>
+            <td>Text (EDGAR filings, earnings-call transcripts, KPI mentions)</td>
+            <td>Precision, Recall, F1-score</td>
+            <td>FinTral, ICE-INTERN, Xuanyuan 2.0</td>
+            <td>Difficulty detecting event-based relationships, lack of domain-specific pretraining.</td>
+          </tr>
+
+          <!-- Investment Research Agent -->
+          <tr style="background-color: #f0f0f0;">
+            <td colspan="6"><strong>Investment Research Agent (asset evaluation and market prediction)</strong></td>
+          </tr>
+
+          <tr style="background-color: #f9f9f9;">
+            <td><strong>Event Classification (EC)</strong></td>
+            <td>FOMC, FedNLP, Headlines</td>
+            <td>Text (policy statements, news headlines, earnings-call transcripts)</td>
+            <td>Accuracy, Precision, Recall, F1-score</td>
+            <td>BloombergGPT, FinLLaMA, Temporal meets LLM, FinMA, FinGPT, ICE-INTERN, FinTral</td>
+            <td>No real-time market data, insufficient domain-specific pretraining.</td>
+          </tr>
+
+          <tr>
+            <td><strong>Sentiment Analysis (SA)</strong></td>
+            <td>FPB, FiQA-SA, StockEmotions</td>
+            <td>Text (news articles, microblogs, StockTwits)</td>
+            <td>Accuracy, Precision, Recall, F1-score, MSE</td>
+            <td>FinGPT, FinMA, BloombergGPT, FinLLaMA, ICE-INTERN, FinTral, InvestLM</td>
+            <td>Short-text limitations, oversimplified sentiment classification, lack of multi-modal context.</td>
+          </tr>
+
+          <tr style="background-color: #f9f9f9;">
+            <td><strong>Time Series Forecasting (TSF)</strong></td>
+            <td>StockNet, Bigdata22, CIKM18</td>
+            <td>Text (tweets, microblogs), Time Series (stock prices)</td>
+            <td>Accuracy, MCC</td>
+            <td>Temporal meets LLM, FinLLaMA, FinGPT, FinMA</td>
+            <td>No real-time data, weak asset-specific feature integration.</td>
+          </tr>
+
+          <!-- Risk Management Agent -->
+          <tr style="background-color: #f0f0f0;">
+            <td colspan="6"><strong>Risk Management Agent (fraud detection and compliance)</strong></td>
+          </tr>
+
+          <tr>
+            <td><strong>Fraud Detection (FD)</strong></td>
+            <td>Credit Card Fraud, ccFraud</td>
+            <td>Text (credit card transactions), Tables (financial logs)</td>
+            <td>Accuracy, Precision, Recall, F1-score, AUC-ROC</td>
+            <td>Finbench, FinGPT, CALM, FinTral, ICE-INTERN</td>
+            <td>Class imbalance, evolving fraud patterns, lack of real-time tracking.</td>
+          </tr>
+
+          <tr style="background-color: #f9f9f9;">
+            <td><strong>Default Risk Prediction (DRP)</strong></td>
+            <td>Finbench-CD, Finbench-LD</td>
+            <td>Text (home equity loans, vehicle loans), Tables (credit card client records)</td>
+            <td>Accuracy, Precision, Recall, F1-score</td>
+            <td>Finbench, FinGPT, CALM, FinTral, ICE-INTERN</td>
+            <td>Highly imbalanced data, poor interpretability for credit decisions.</td>
+          </tr>
+
+          <!-- Multi-Agent Collaboration -->
+          <tr style="background-color: #f0f0f0;">
+            <td colspan="6"><strong>Multi-Agent Collaboration (MAC)</strong></td>
+          </tr>
+
+          <tr>
+            <td><strong>Multi-Agent Collaboration (MAC)</strong></td>
+            <td>FinCon, Tradingagents, Cryptoagents</td>
+            <td>Text (financial news), Tables (crypto market data), Audio (ECC recordings)</td>
+            <td>CoT Accuracy, Profitability, CR, SR, MDD</td>
+            <td>StockGPT, FinCon, Tradingagents, Cryptoagents, FinRobot</td>
+            <td>Lack of real-time trading support, prompt engineering sensitivity.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+  
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
