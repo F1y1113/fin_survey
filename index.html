@@ -310,7 +310,7 @@ and Real-World Deployment</h1>
   <div class="container is-max-desktop">
     <div class="hero-body">
       <table class="table is-striped is-hoverable">
-        <caption><strong>Summary of raw data size, collection period, data sources, and license types of representative datasets in the finance domain.</strong></caption>
+        <caption><strong>Comprehensive Overview of Representative Financial Datasets. The table summarizes key characteristics—including raw data size, collection period, data sources, and license types—of datasets used by various LLM-based agents in finance. [Best to zoom in]</strong></caption>
         <thead>
           <tr style="background-color: #d3d3d3;">
             <th>Agent & Subtask</th>
@@ -326,80 +326,146 @@ and Real-World Deployment</h1>
           <!-- Data Analysis Agent -->
           <tr style="background-color: #f0f0f0;">
             <td rowspan="7"><strong>Data Analysis Agent</strong></td>
-            <td><strong>ECT-Sum</strong></td>
+            <td><strong><a href="https://github.com/adlnlp/FinLLMs">ECT-Sum</a></strong></td>
             <td>2,425 document-summary pairs</td>
             <td>Jan 2019 - Apr 2022</td>
             <td>Earnings call transcripts, Reuters articles</td>
             <td>GPL-3.0 license</td>
           </tr>
           <tr>
-            <td><strong>LCFNS</strong></td>
+            <td><strong><a href="https://github.com/adlnlp/FinLLMs">LCFNS</a></strong></td>
             <td>430,820 news-summary pairs</td>
             <td>Jan 2013 - Jun 2020</td>
             <td>Major financial portals</td>
             <td>Public</td>
           </tr>
           <tr>
-            <td><strong>FIN</strong></td>
+            <td><strong><a href="https://paperswithcode.com/dataset/fin">FIN</a></strong></td>
             <td>54,256 words (8 annotated agreements)</td>
             <td>-</td>
             <td>U.S. SEC filings</td>
             <td>None Public</td>
           </tr>
           <tr>
-            <td><strong>FiNER-ORD</strong></td>
+            <td><strong><a href="https://github.com/adlnlp/FinLLMs">FiNER-ORD</a></strong></td>
             <td>201 financial news articles, 4,739 sentences</td>
             <td>Jul 2015 - Oct 2015</td>
             <td>Webz.io</td>
             <td>CC BY-NC 4.0</td>
           </tr>
           <tr>
-            <td><strong>FinRED</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2306.03736">FinRED</a></strong></td>
             <td>7,775 sentences, 29 relation types</td>
             <td>Jul 2015 - Oct 2015, Jun 2019 - Sep 2019</td>
             <td>Financial news articles, earnings calls</td>
             <td>Public</td>
           </tr>
           <tr>
-            <td><strong>FIRE</strong></td>
+            <td><strong><a href="https://aclanthology.org/2024.findings-naacl.230.pdf">FIRE</a></strong></td>
             <td>3,025 instances, 18 relation types</td>
             <td>1993 - 2021</td>
             <td>Financial news articles, SEC filings</td>
             <td>CC BY 4.0</td>
           </tr>
           <tr>
-            <td><strong>KPI-EDGAR</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2210.09163">KPI-EDGAR</a></strong></td>
             <td>1,355 sentences</td>
             <td>-</td>
             <td>EDGAR database annual reports</td>
             <td>MIT license</td>
           </tr>
 
+          <!-- Investment Research Agent -->
+          <tr style="background-color: #f0f0f0;">
+            <td rowspan="9"><strong>Investment Research Agent</strong></td>
+            <td><strong><a href="https://www.federalreserve.gov/monetarypolicy/fomc.htm">FOMC</a></strong></td>
+            <td>214 minutes, 1,026 speeches, 63 transcripts</td>
+            <td>1996 - 2022</td>
+            <td>Federal Open Market Committee communications</td>
+            <td>CC BY-NC 4.0</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://fednlp.net/">FedNLP</a></strong></td>
+            <td>1000+ speeches, 100+ press conferences</td>
+            <td>Jan 2015 - Jul 2020</td>
+            <td>Federal Reserve communications</td>
+            <td>Public</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://www.researchgate.net/publication/380634832_NIFTY_Financial_News_Headlines_Dataset">Headlines</a></strong></td>
+            <td>11,412 annotated news headlines</td>
+            <td>2000 - 2019</td>
+            <td>Gold commodity market</td>
+            <td>CC BY-NC-ND 4.0</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news">FPB</a></strong></td>
+            <td>4,840 sentences</td>
+            <td>-</td>
+            <td>Financial news articles</td>
+            <td>CC BY-SA 3.0</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://github.com/fiqa/fiqa">FiQA-SA</a></strong></td>
+            <td>529 annotated headlines and 774 financial microblogs</td>
+            <td>-</td>
+            <td>Financial news and social media</td>
+            <td>CC-BY-3.0</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://github.com/adlnlp/StockEmotions">StockEmotions</a></strong></td>
+            <td>10,000 investor comments, 12 emotions</td>
+            <td>Jan 2020 - Dec 2020</td>
+            <td>StockTwits</td>
+            <td>Public</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://github.com/yangyuchen/stocknet-dataset">StockNet</a></strong></td>
+            <td>26,614 price movement data of 88 stocks</td>
+            <td>2014 - 2016</td>
+            <td>S&P 500 stocks, StockTwits</td>
+            <td>MIT license</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://arxiv.org/abs/2206.01736">Bigdata22</a></strong></td>
+            <td>7,164 tweets</td>
+            <td>2014 - 2015</td>
+            <td>S&P 500 stocks</td>
+            <td>Public</td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://arxiv.org/abs/1810.08178">CIKM18</a></strong></td>
+            <td>47 stocks from S&P 500</td>
+            <td>Jan 2017 - Nov 2017</td>
+            <td>Yahoo Finance, Twitter</td>
+            <td>Public</td>
+          </tr>
+
           <!-- Trading Agent -->
           <tr style="background-color: #f0f0f0;">
             <td rowspan="4"><strong>Trading Agent</strong></td>
-            <td><strong>GPT-InvestAR</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2306.07891">GPT-InvestAR</a></strong></td>
             <td>10-K filings with 24,200 documents</td>
             <td>2002 - 2023</td>
             <td>Annual SEC report filings</td>
             <td>MIT license</td>
           </tr>
           <tr>
-            <td><strong>FinTrade</strong></td>
-            <td>16,137 news, 65 10-K/10-Q files, 4,970 price data from 10 stocks</td>
+            <td><strong><a href="https://arxiv.org/abs/2401.01357">FinTrade</a></strong></td>
+            <td>16,137 news articles, 65 10-K/10-Q files, 4,970 price data from 10 stocks</td>
             <td>One year period</td>
             <td>Stock prices, SEC filings, news</td>
             <td>MIT license</td>
           </tr>
           <tr>
-            <td><strong>InvestorBench</strong></td>
+            <td><strong><a href="https://github.com/FinAI/InvestorBench">InvestorBench</a></strong></td>
             <td>5,000 stock prices, 2,000 earnings reports, 50,000 cryptocurrency articles</td>
             <td>2019 - 2023</td>
             <td>Yahoo Finance, CoinMarketCap, CryptoPotato, CoinTelegraph</td>
             <td>MIT license</td>
           </tr>
           <tr>
-            <td><strong>STRUX</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2402.11249">STRUX</a></strong></td>
             <td>11,950 quarterly earnings call transcripts</td>
             <td>2017 - 2024</td>
             <td>Motley Fool website, NASDAQ 500 and S&P 500 stocks</td>
@@ -409,29 +475,29 @@ and Real-World Deployment</h1>
           <!-- Risk Management Agent -->
           <tr style="background-color: #f0f0f0;">
             <td rowspan="4"><strong>Risk Management Agent</strong></td>
-            <td><strong>Credit Card Fraud</strong></td>
+            <td><strong><a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud">Credit Card Fraud</a></strong></td>
             <td>11,392 transactions</td>
             <td>2013</td>
             <td>European cardholders</td>
             <td>DbCL v1.0</td>
           </tr>
           <tr>
-            <td><strong>ccFraud</strong></td>
+            <td><strong><a href="https://www.kaggle.com/datasets/kamaruddin/credit-card-fraud">ccFraud</a></strong></td>
             <td>10,485 transactions</td>
             <td>2013</td>
             <td>European cardholders</td>
             <td>Public</td>
           </tr>
           <tr>
-            <td><strong>Finbench-CD</strong></td>
-            <td>30k credit records</td>
+            <td><strong><a href="https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset">Finbench-CD</a></strong></td>
+            <td>30,000 credit records</td>
             <td>Apr - Sep 2005</td>
             <td>Credit card clients in Taiwan</td>
             <td>CC BY-NC 4.0</td>
           </tr>
           <tr>
-            <td><strong>Finbench-LD</strong></td>
-            <td>10k credit records, 200k vehicle loan records</td>
+            <td><strong><a href="https://www.kaggle.com/datasets/krishna0909/vehicle-loan-default-prediction">Finbench-LD</a></strong></td>
+            <td>10,000 credit records, 200,000 vehicle loan records</td>
             <td>-</td>
             <td>Loan records</td>
             <td>CC BY-NC 4.0</td>
@@ -440,27 +506,26 @@ and Real-World Deployment</h1>
           <!-- Multi-Agent Collaboration -->
           <tr style="background-color: #f0f0f0;">
             <td rowspan="3"><strong>Multi-Agent Collaboration</strong></td>
-            <td><strong>FinCon</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2403.11234">FinCon</a></strong></td>
             <td>Data size not specified</td>
             <td>Aug 2020 - Aug 2023</td>
             <td>Yahoo Finance, Form 10-Q, Form 10-K, Zacks Rank, Earnings conference calls</td>
             <td>CC BY-NC 4.0</td>
           </tr>
           <tr>
-            <td><strong>Tradingagents</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2402.01578">Tradingagents</a></strong></td>
             <td>Data size not specified</td>
             <td>Jan - Mar 2024</td>
             <td>S&P 500 stocks, Bloomberg, Yahoo, Reddit, Twitter</td>
             <td>None Public</td>
           </tr>
           <tr>
-            <td><strong>Cryptoagents</strong></td>
+            <td><strong><a href="https://arxiv.org/abs/2401.09876">Cryptoagents</a></strong></td>
             <td>Top 30 cryptocurrency data</td>
             <td>Jun 2023 - Sep 2024</td>
             <td>Blockchain.info, Coin Metrics, Cointelegraph</td>
             <td>None Public</td>
           </tr>
-
         </tbody>
       </table>
     </div>
