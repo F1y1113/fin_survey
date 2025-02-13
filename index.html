@@ -169,28 +169,28 @@ and Real-World Deployment</h1>
 
           <tr>
             <td><strong>Text Summarization (TS)</strong></td>
-            <td><a href="#">ECT-Sum</a>, <a href="#">LCFNS</a></td>
+            <td><a href="https://arxiv.org/abs/2210.12467">ECT-Sum</a>, <a href="https://ieeexplore.ieee.org/document/10214663">LCFNS</a></td>
             <td>Text (earnings-call transcripts, financial reports, news articles)</td>
             <td>ROUGE, BERTScore, Num-Prec., SummaC</td>
-            <td><a href="#">FinMA</a>, <a href="#">FinTral</a>, <a href="#">InvestLM</a>, <a href="#">BloombergGPT</a>, <a href="#">FinGPT</a></td>
+            <td><a href="https://arxiv.org/abs/2306.05443">FinMA</a>, <a href="https://arxiv.org/abs/2402.10986">FinTral</a>, <a href="https://arxiv.org/abs/2309.13064">InvestLM</a>, <a href="https://arxiv.org/abs/2303.17564">BloombergGPT</a>, <a href="https://github.com/AI4Finance-Foundation/FinGPT">FinGPT</a></td>
             <td>Limited structured data integration, high computational cost, lack of real-time updates.</td>
           </tr>
 
           <tr style="background-color: #f9f9f9;">
             <td><strong>Name-Entity Recognition (NER)</strong></td>
-            <td><a href="#">FIN</a>, <a href="#">FiNER-ORD</a></td>
+            <td><a href="https://aclanthology.org/U15-1010.pdf">FIN</a>, <a href="https://huggingface.co/datasets/ICE-PIXIU/finer-ord">FiNER-ORD</a></td>
             <td>Text (SEC filings, financial news articles)</td>
             <td>Precision, Recall, F1-score</td>
-            <td><a href="#">FinMA</a>, <a href="#">InvestLM</a>, <a href="#">ICE-INTERN</a></td>
+            <td><a href="https://arxiv.org/abs/2306.05443">FinMA</a>, <a href="https://arxiv.org/abs/2309.13064">InvestLM</a>, <a href="https://arxiv.org/abs/2403.06249">ICE-INTERN</a></td>
             <td>Small-scale coverage, weak entity linking, limited numeric reasoning.</td>
           </tr>
 
           <tr>
             <td><strong>Financial Relation Extraction (FRE)</strong></td>
-            <td><a href="#">FinRED</a>, <a href="#">FIRE</a>, <a href="#">KPI-EDGAR</a></td>
+            <td><a href="https://github.com/soummyaah/FinRED">FinRED</a>, <a href="https://aclanthology.org/2024.findings-naacl.230/">FIRE</a>, <a href="https://arxiv.org/abs/2210.09163">KPI-EDGAR</a></td>
             <td>Text (EDGAR filings, earnings-call transcripts, KPI mentions)</td>
             <td>Precision, Recall, F1-score</td>
-            <td><a href="#">FinTral</a>, <a href="#">ICE-INTERN</a>, <a href="#">Xuanyuan 2.0</a></td>
+            <td><a href="https://arxiv.org/abs/2402.10986">FinTral</a>, <a href="https://arxiv.org/abs/2403.06249">ICE-INTERN</a>, <a href="https://arxiv.org/abs/2305.12002">Xuanyuan 2.0</a></td>
             <td>Difficulty detecting event-based relationships, lack of domain-specific pretraining.</td>
           </tr>
 
@@ -201,28 +201,28 @@ and Real-World Deployment</h1>
 
           <tr style="background-color: #f9f9f9;">
             <td><strong>Event Classification (EC)</strong></td>
-            <td><a href="#">FOMC</a>, <a href="#">FedNLP</a>, <a href="#">Headlines</a></td>
+            <td><a href="https://aclanthology.org/2023.acl-long.368/">FOMC</a>, <a href="https://fednlp.net/">FedNLP</a>, <a href="https://arxiv.org/abs/2009.04202">Headlines</a></td>
             <td>Text (policy statements, news headlines, earnings-call transcripts)</td>
             <td>Accuracy, Precision, Recall, F1-score</td>
-            <td><a href="#">BloombergGPT</a>, <a href="#">FinLLaMA</a>, <a href="#">Temporal meets LLM</a>, <a href="#">FinMA</a>, <a href="#">FinGPT</a></td>
+            <td><a href="https://arxiv.org/abs/2303.17564">BloombergGPT</a>, <a href="https://arxiv.org/abs/2403.12285">FinLLaMA</a>, <a href="https://arxiv.org/abs/2306.11025">Temporal meets LLM</a>, <a href="https://arxiv.org/abs/2306.05443">FinMA</a>, <a href="https://github.com/AI4Finance-Foundation/FinGPT">FinGPT</a></td>
             <td>No real-time market data, insufficient domain-specific pretraining.</td>
           </tr>
 
           <tr>
             <td><strong>Sentiment Analysis (SA)</strong></td>
-            <td><a href="#">FPB</a>, <a href="#">FiQA-SA</a>, <a href="#">StockEmotions</a></td>
+            <td><a href="https://www.researchgate.net/publication/251231107_Good_Debt_or_Bad_Debt_Detecting_Semantic_Orientations_in_Economic_Texts">FPB</a>, <a href="https://www.researchgate.net/publication/324629350_WWW'18_Open_Challenge_Financial_Opinion_Mining_and_Question_Answering">FiQA-SA</a>, <a href="https://github.com/adlnlp/StockEmotions">StockEmotions</a></td>
             <td>Text (news articles, microblogs, StockTwits)</td>
             <td>Accuracy, Precision, Recall, F1-score, MSE</td>
-            <td><a href="#">FinGPT</a>, <a href="#">FinMA</a>, <a href="#">BloombergGPT</a>, <a href="#">FinLLaMA</a></td>
+            <td><a href="https://github.com/AI4Finance-Foundation/FinGPT">FinGPT</a>, <a href="https://arxiv.org/abs/2306.05443">FinMA</a>, <a href="https://arxiv.org/abs/2303.17564">BloombergGPT</a>, <a href="https://arxiv.org/abs/2403.12285">FinLLaMA</a></td>
             <td>Short-text limitations, oversimplified sentiment classification, lack of multi-modal context.</td>
           </tr>
 
           <tr style="background-color: #f9f9f9;">
             <td><strong>Time Series Forecasting (TSF)</strong></td>
-            <td><a href="#">StockNet</a>, <a href="#">Bigdata22</a>, <a href="#">CIKM18</a></td>
+            <td><a href="#=https://paperswithcode.com/dataset/stocknet-1">StockNet</a>, <a href="https://jaeminyoo.github.io/resources/papers/SounYCJK22.pdf">Bigdata22</a>, <a href="https://weizhangltt.github.io/paper/cikm18-stock-preprint.pdf">CIKM18</a></td>
             <td>Text (tweets, microblogs), Time Series (stock prices)</td>
             <td>Accuracy, MCC</td>
-            <td><a href="#">Temporal meets LLM</a>, <a href="#">FinLLaMA</a>, <a href="#">FinGPT</a>, <a href="#">FinMA</a></td>
+            <td><a href="https://arxiv.org/abs/2306.11025">Temporal meets LLM</a>, <a href="https://arxiv.org/abs/2403.12285">FinLLaMA</a>, <a href="https://github.com/AI4Finance-Foundation/FinGPT">FinGPT</a>, <a href="https://arxiv.org/abs/2306.05443">FinMA</a></td>
             <td>No real-time data, weak asset-specific feature integration.</td>
           </tr>
           
@@ -233,19 +233,19 @@ and Real-World Deployment</h1>
 
           <tr>
             <td><strong>Strategy Execution (SE)</strong></td>
-            <td><a href="#">GPT-InvestAR</a>, <a href="#">FinTrade</a></td>
+            <td><a href="https://arxiv.org/abs/2309.03079">GPT-InvestAR</a>, <a href="https://arxiv.org/abs/2402.12659">FinTrade</a></td>
             <td>Text (earnings reports, sentiment), Tables (historical prices)</td>
             <td>Profitability, Sharpe Ratio (SR)</td>
-            <td><a href="#">GPT-3.5-Turbo</a>, <a href="#">FinBen</a></td>
+            <td><a href="https://openai.com/index/gpt-3-5-turbo-fine-tuning-and-api-updates/">GPT-3.5-Turbo</a>, <a href="https://arxiv.org/abs/2402.12659">FinBen</a></td>
             <td>Narrow market coverage, lack of real-time data, overlook portfolio diversification.</td>
           </tr>
 
           <tr style="background-color: #f9f9f9;">
             <td><strong>Support Decision-Making (SDM)</strong></td>
-            <td><a href="#">InvestorBench</a>, <a href="#">STRUX</a>, <a href="#">FinBen</a></td>
+            <td><a href="https://arxiv.org/abs/2412.18174">InvestorBench</a>, <a href="https://powerdrill.ai/discover/discover-STRUX-An-LLM-cm2dscfh58buf01aurk1exia9">STRUX</a>, <a href="https://arxiv.org/abs/2402.12659">FinBen</a></td>
             <td>Text (financial reports), Tables (crypto market data), Time Series (stock prices)</td>
             <td>Cumulative Return (CR), Sharpe Ratio (SR), Annualized Volatility (AV), Maximum Drawdown (MDD)</td>
-            <td><a href="#">FinMEM</a>, <a href="#">STRUX</a>, <a href="#">CFGPT</a></td>
+            <td><a href="https://arxiv.org/abs/2311.13743">FinMEM</a>, <a href="https://powerdrill.ai/discover/discover-STRUX-An-LLM-cm2dscfh58buf01aurk1exia9">STRUX</a>, <a href="https://github.com/TongjiFinLab/CFGPT">CFGPT</a></td>
             <td>Narrow real-world asset coverage, over-reliance on simplistic reward signals.</td>
           </tr>
 
@@ -256,10 +256,10 @@ and Real-World Deployment</h1>
 
           <tr>
             <td><strong>Question-Answering (QA)</strong></td>
-            <td><a href="#">FiQA-QA</a>, <a href="#">FinQA</a>, <a href="#">ConvFinQA</a></td>
+            <td><a href="https://www.researchgate.net/publication/324629350_WWW'18_Open_Challenge_Financial_Opinion_Mining_and_Question_Answering">FiQA-QA</a>, <a href="https://finqasite.github.io/">FinQA</a>, <a href="https://arxiv.org/abs/2210.03849">ConvFinQA</a></td>
             <td>Text (financial news, social media posts, earnings statements), Tables (S&P 500 market tables)</td>
             <td>nDCG, MRR, Execution Accuracy, Program Accuracy</td>
-            <td><a href="#">FinQANet</a>, <a href="#">Alphafin</a>, <a href="#">FinMA</a>, <a href="#">InvestLM</a></td>
+            <td><a href="https://aclanthology.org/2022.emnlp-main.421/">FinQANet</a>, <a href="https://alphafin.io/">Alphafin</a>, <a href="https://arxiv.org/abs/2306.05443">FinMA</a>, <a href=https://arxiv.org/abs/2309.13064">InvestLM</a></td>
             <td>Limited multi-modal support, struggle with long multi-hop reasoning.</td>
           </tr>
 
@@ -270,19 +270,19 @@ and Real-World Deployment</h1>
 
           <tr>
             <td><strong>Fraud Detection (FD)</strong></td>
-            <td><a href="#">Credit Card Fraud</a>, <a href="#">ccFraud</a></td>
+            <td><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4543450">Credit Card Fraud</a>, <a href="https://www.researchgate.net/publication/309638452_Credit_Card_Fraud_Detection_using_Big_Data_Analytics_Use_of_PSOAANN_based_One-Class_Classification">ccFraud</a></td>
             <td>Text (credit card transactions), Tables (financial logs)</td>
             <td>Accuracy, Precision, Recall, F1-score, AUC-ROC</td>
-            <td><a href="#">Finbench</a>, <a href="#">FinGPT</a>, <a href="#">CALM</a></td>
+            <td><a href="https://paperswithcode.com/dataset/finbench">Finbench</a>, <a href="https://huggingface.co/FinGPT">FinGPT</a>, <a href="https://arxiv.org/abs/2310.00566">CALM</a></td>
             <td>Class imbalance, evolving fraud patterns, lack of real-time tracking.</td>
           </tr>
 
           <tr style="background-color: #f9f9f9;">
             <td><strong>Default Risk Prediction (DRP)</strong></td>
-            <td><a href="#">Finbench-CD</a>, <a href="#">Finbench-LD</a></td>
+            <td><a href="https://paperswithcode.com/dataset/finbench">Finbench-CD</a>, <a href="https://paperswithcode.com/dataset/finbench">Finbench-LD</a></td>
             <td>Text (home equity loans, vehicle loans), Tables (credit card client records)</td>
             <td>Accuracy, Precision, Recall, F1-score</td>
-            <td><a href="#">Finbench</a>, <a href="#">FinGPT</a>, <a href="#">CALM</a></td>
+            <td><a href="https://paperswithcode.com/dataset/finbench">Finbench</a>, <a href="https://huggingface.co/FinGPT">FinGPT</a>, <a href="https://arxiv.org/abs/2310.00566">CALM</a></td>
             <td>Highly imbalanced data, poor interpretability for credit decisions.</td>
           </tr>
 
@@ -293,10 +293,10 @@ and Real-World Deployment</h1>
 
           <tr>
             <td><strong>Multi-Agent Collaboration (MAC)</strong></td>
-            <td><a href="#">FinCon</a>, <a href="#">Tradingagents</a>, <a href="#">Cryptoagents</a></td>
+            <td><a href="https://arxiv.org/abs/2407.06567">FinCon</a>, <a href="https://www.arxiv.org/abs/2412.20138">Tradingagents</a>, <a href="https://arxiv.org/abs/2501.00826">Cryptoagents</a></td>
             <td>Text (financial news), Tables (crypto market data), Audio (ECC recordings)</td>
             <td>CoT Accuracy, Profitability, CR, SR, MDD</td>
-            <td><a href="#">StockGPT</a>, <a href="#">FinCon</a>, <a href="#">Tradingagents</a></td>
+            <td><a href="https://arxiv.org/abs/2404.05101">StockGPT</a>, <a href="https://arxiv.org/abs/2407.06567">FinCon</a>, <a href="https://www.arxiv.org/abs/2412.20138">Tradingagents</a></td>
             <td>Lack of real-time trading support, prompt engineering sensitivity.</td>
           </tr>
 
